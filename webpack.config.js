@@ -13,6 +13,9 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
+    new UglifyJsPlugin({ sourceMap: true }),
+  ],
+  plugins: [
     new HtmlWebpackPlugin({
       title : 'Ping Pong',
       template: './src/index.html',
