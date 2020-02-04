@@ -1,5 +1,7 @@
 import { pingPong } from './ping-pong';
+import 'bootstrap';
 import './styles.css';
+import $ from 'jquery';
 
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
